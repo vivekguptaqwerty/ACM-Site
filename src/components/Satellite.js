@@ -29,8 +29,11 @@ const Satellite = ({ color, visible, position, index }) => {
         section = t("team").toUpperCase();
         break;
       case 4:
-        section = t("contactus").toUpperCase();
+        section = t("events").toUpperCase();
         break;
+        case 5:
+          section = t("contactus").toUpperCase();
+          break;
       default:
         section = "";
         break;
@@ -58,6 +61,9 @@ const Satellite = ({ color, visible, position, index }) => {
       case 4:
         iconPath = "/icons/contact_me.svg";
         break;
+        case 5:
+          iconPath = "/icons/contact_me.svg";
+          break;
       default:
         iconPath = "";
         break;
@@ -85,6 +91,7 @@ const Satellite = ({ color, visible, position, index }) => {
       case 4:
         url = "/portfolio/contactus";
         break;
+      
       default:
         url = "/portfolio";
         break;

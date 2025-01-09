@@ -16,6 +16,7 @@ import Aboutus from "./Aboutus";
 import Expertise from "./Expertise";
 import Services from "./Services";
 import Team from "./Team";
+import Event from "./Event"
 import Contactus from "./Contactus";
 import NotFound from "./NotFound";
 import profilePicture from '../assets/ACM.jpg';
@@ -24,7 +25,7 @@ const Portfolio = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const { sectionId } = useParams();
-    const sections = useMemo(() => ["aboutus", "expertise", "services", "team", "contactus"], []);
+    const sections = useMemo(() => ["aboutus", "expertise", "services", "team", "event", "contactus"], []);
     const [isCurrentSection, setIsCurrentSection] = useState(sectionId === null || sectionId === undefined ? "aboutme" : sectionId);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -46,6 +47,9 @@ const Portfolio = () => {
             case "team":
                 titleBtn = t("Team");
                 break;
+                case "event":
+                    titleBtn = t("Event");
+                    break;
             case "contactus":
                 titleBtn = t("ContactUs");
                 break;
@@ -73,6 +77,9 @@ const Portfolio = () => {
             case "team":
                 iconSection = <MdComputer className="icon-menu-section" />
                 break;
+                case "event":
+                    iconSection = <BiPhone className="icon-menu-section" />
+                    break;
             case "contactus":
                 iconSection = <BiPhone className="icon-menu-section" />
                 break;
@@ -108,6 +115,11 @@ const Portfolio = () => {
                     <Team menuOpened={isOpen} threshold={threshold} />
                 </Element>
                 break;
+                case "event":
+                    currentSection = <Element name="event" id="event" key={"event"}>
+                        <Event menuOpened={isOpen} threshold={threshold} />
+                    </Element>
+                    break;
             case "contactus":
                 currentSection = <Element name="contactus" id="contactus" key={"contactus"}>
                     <Contactus threshold={threshold} />
