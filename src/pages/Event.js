@@ -2,6 +2,13 @@
 import React, { useState } from 'react';
 import { Instagram, Calendar, Clock, MapPin, Users } from 'lucide-react';
 import "../css/Event.css";
+import Event1 from "../assets/Events/Event1.jpg"
+import Event2 from "../assets/Events/Event2.jpg"
+import Event3 from "../assets/Events/Event3.jpg"
+import Event4 from "../assets/Events/Event4.jpg"
+import Event5 from "../assets/Events/Event5.jpg"
+import Event6 from "../assets/Events/Event6.jpg"
+import Event7 from "../assets/Events/Event7.jpg"
 
 function Star(props) {
   return (
@@ -93,38 +100,86 @@ function EventSection() {
   const events = [
     { 
       id: 1, 
-      title: "Technical Workshop",
+      title: "Dance Workshop",
       date: "15 Jan 2024",
       time: "10:00 AM - 2:00 PM",
       venue: "Main Auditorium",
-      category: "Odd sem",
+      category: "Zephyr",
       participants: "150+",
       description: "Join us for an immersive technical workshop featuring cutting-edge technologies and hands-on sessions.",
-      image: "/api/placeholder/400/200",
+      image: Event1,
       instagramLink: "https://instagram.com/techworkshop"
     },
     { 
       id: 2, 
-      title: "Cultural Night",
+      title: "Power Show",
       date: "20 Feb 2024",
       time: "6:00 PM - 10:00 PM",
       venue: "Open Air Theatre",
       category: "Zephyr",
       participants: "500+",
       description: "Experience a magical evening of music, dance, and theatrical performances.",
-      image: "/api/placeholder/400/200",
+      image: Event2,
       instagramLink: "https://instagram.com/culturalnight"
     },
     { 
       id: 3, 
-      title: "Technical Symposium",
+      title: "Scavengers Hunt",
       date: "10 Mar 2024",
       time: "9:00 AM - 5:00 PM",
-      venue: "Convention Center",
-      category: "Even Sem",
+      venue: "Scavengers Hunt",
+      category: "Zephyr",
       participants: "300+",
       description: "Showcase your technical prowess and compete with the brightest minds.",
-      image: "/api/placeholder/400/200",
+      image: Event3,
+      instagramLink: "https://instagram.com/techsymposium"
+    },
+    { 
+      id: 4, 
+      title: "Escape Room",
+      date: "10 Mar 2024",
+      time: "9:00 AM - 5:00 PM",
+      venue: "Scavengers Hunt",
+      category: "Zephyr",
+      participants: "300+",
+      description: "Showcase your technical prowess and compete with the brightest minds.",
+      image: Event4,
+      instagramLink: "https://instagram.com/techsymposium"
+    },
+    { 
+      id: 5, 
+      title: "Valorant",
+      date: "10 Mar 2024",
+      time: "9:00 AM - 5:00 PM",
+      venue: "Scavengers Hunt",
+      category: "Zephyr",
+      participants: "300+",
+      description: "Showcase your technical prowess and compete with the brightest minds.",
+      image: Event5,
+      instagramLink: "https://instagram.com/techsymposium"
+    },
+    { 
+      id: 6, 
+      title: "Balloon Shooting",
+      date: "10 Mar 2024",
+      time: "9:00 AM - 5:00 PM",
+      venue: "Scavengers Hunt",
+      category: "Zephyr",
+      participants: "300+",
+      description: "Showcase your technical prowess and compete with the brightest minds.",
+      image: Event6,
+      instagramLink: "https://instagram.com/techsymposium"
+    },
+    { 
+      id: 7, 
+      title: "Debug the Code",
+      date: "10 Mar 2024",
+      time: "9:00 AM - 5:00 PM",
+      venue: "Scavengers Hunt",
+      category: "Zephyr",
+      participants: "300+",
+      description: "Showcase your technical prowess and compete with the brightest minds.",
+      image: Event7,
       instagramLink: "https://instagram.com/techsymposium"
     },
   ];
